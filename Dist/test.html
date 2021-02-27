@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  @-webkit-keyframes test{
+    0%{background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-0_540x.jpg?v=1602257789');
+
+    }
+    25%{
+        background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-1_540x.jpg?v=1602258059');
+    }
+    50%{
+        background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-3_540x.jpg?v=1602258059');
+    }
+    75%{
+        background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-4_360x.jpg?v=1602258059');
+    }
+    100%{
+        background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/Unknown-1_b37e1a4d-3481-4d51-82c3-c0995495d845_720x.jpg?v=1602262075');
+    }
+    
+}
+ div{
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-animation: test 12s infinite;
+            animation: test 12s infinite;
+    -webkit-animation-timing-function: steps(1, end);
+            animation-timing-function: steps(1, end);
+} 
+#steps{
+    -webkit-animation-timing-function: steps(1, end);
+            animation-timing-function: steps(1, end);
+}
+
+
+</style>
+</head>
+<body>
+  <div id="steps"></div>
+  
+  <!-- <div class="test">
+   <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-0_540x.webp" alt="">
+  <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-1_720x.webp" alt="">
+  <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-3_540x.jpg" alt="">
+  <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-4_360x.jpg" alt=""> 
+</div>  -->
+</body>
+</html>
