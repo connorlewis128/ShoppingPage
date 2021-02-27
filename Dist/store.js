@@ -7,8 +7,8 @@
 let carts = document.querySelectorAll('#add-to-cart');
 let products = [
   {
-    name:'Suliven Quilted Jacket',
-    Tag:'brown jacket',
+    name:'ZIPPERED HOODED SWEATSHIRT',
+    Tag:'black jacket/front',
     price:680.00,
     inCart:0
   }
