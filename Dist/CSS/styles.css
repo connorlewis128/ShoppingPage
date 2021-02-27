@@ -184,24 +184,21 @@ i{
 
 
 /* Image Animation */
+
 @-webkit-keyframes blackjacket{
   /* black */
-  0%{background-image:  ;
-    
-  
+  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp')
+
   }
   33.3%{
-      background-image: src('C:/Users/Connor/Desktop/Shopping page Project/Dist/images/new product/black jacket/back.webp');
-      
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/back.webp');
   }
   66.6%{
-      background-image: src('C:/Users/Connor/Desktop/Shopping page Project/Dist/images/new product/black jacket/side.webp');
-     
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
   }
   
   100%{
-      background-image: src('C:\Users\Connor\Desktop\Shopping page Project\Dist\images\new product\black jacket\side.webp');
-     
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
   }
 
   
