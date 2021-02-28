@@ -38,10 +38,7 @@ body{
   
   margin-right: 3%;
 }
-.navbar> span > span .cart{
-  
-  padding: 0;
-}
+
 .navbarCart{
   padding: 6px;
 }
@@ -115,9 +112,14 @@ body{
 
 .cart{ 
   display:flex;
+  justify-content: flex-start;
   margin: auto;
   
   margin-top: 50%;
+}
+#favorite{
+  
+  margin-right: 5px;
 }
 
 /* Text  styling */
@@ -125,12 +127,20 @@ body{
   margin-top: 25%;
 }
 /* size buttons */
-.btn-primary {
+.btn{
+  line-height: 1;
+}
+.btn-secondary {
+  line-height: 1.5;
+  border-radius: 50px;
   color: #fff;
   background-color: rgb(202, 200, 200);
 }
 .btn-secondary:hover{
   background-color: rgb(14, 13, 13);
+}
+.btn-secondary:active{
+  background-color: #000;
 }
 
  /* color buttons */
@@ -173,13 +183,13 @@ body{
   margin: 10px;
 
 }
-i{
-  margin-top: .75%;
-}
+
 .fab{
-  padding-top: 0;
+  
+  padding: 0;
   font-size: 40px;
-  color: pink;
+  background-color: #fff;
+  color: #000;
 }
 
 
@@ -205,54 +215,55 @@ i{
 }
 @-webkit-keyframes whitejacket{
   /* white */
-  0%{background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_1_1_1.jpg?ts=1610109981967')
+  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp')
 
   }
   33.3%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_2_1.jpg?ts=1610109951231');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/back.webp');
   }
   66.6%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_3_1.jpg?ts=1610109993764');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
   }
   
   100%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_3_1.jpg?ts=1610109993764');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
   }
+  
 
   
 }
 @-webkit-keyframes greyjacket{
   /* grey */
-  0%{background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_1_1_1.jpg?ts=1610109981967')
+  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp')
 
   }
   33.3%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_2_1.jpg?ts=1610109951231');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/back.webp');
   }
   66.6%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_3_1.jpg?ts=1610109993764');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
   }
   
   100%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_3_1.jpg?ts=1610109993764');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
   }
 
   
 }
 @-webkit-keyframes yellowjacket{
   /* yellow*/
-  0%{background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_1_1_1.jpg?ts=1610109981967')
+  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp')
 
   }
   33.3%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_2_1.jpg?ts=1610109951231');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/back.webp');
   }
   66.6%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_3_1.jpg?ts=1610109993764');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
   }
   
   100%{
-      background-image: url('https://static.zara.net/photos///2021/V/0/2/p/0761/406/800/2/w/1280/0761406800_2_3_1.jpg?ts=1610109993764');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
   }
 
   
