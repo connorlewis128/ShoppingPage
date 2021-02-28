@@ -142,48 +142,69 @@ body{
 .btn-secondary:active{
   background-color: #000;
 }
+/*  */
 
  /* color buttons */
+  .btn-group{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
 
- .btn-group .button1 {
-  background-color: #6b4112; /* Brown */
-  border-radius:10px;
-  color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
+    
+    
+  }
+  .button1 {
+  background-color: #000; /* black */
   margin: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  border: #000 .5px solid;
+
+  
+}
+  .button2 {
+  background-color: #fff; /* white */
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  border: #000 .5px solid;
+
+  
+}
+  .button3 {
+  background-color: rgb(70, 68, 68); /* grey */
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  border: #000 .5px solid;
+
+  
+}
+  .button4 {
+  background-color: #ffef0a; /* yellow */
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  border: #000 .5px solid;
+
+  
 }
   
- .btn-group .button2 {
-  background-color: #000; /* Black */
-  border-radius:10px;
-  color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-  margin: 10px;
- }
- .btn-group .button3 {
-  background-color: #333; /* Grey */
-  border-radius:10px;
-  color: white;
-  padding: 15px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-  margin: 10px;
-
+/*  */
+/* add to cart button */
+#add-to-cart .btn{
+  width: 200px;
 }
-
+/*  */
 .fab{
   
   padding: 0;
