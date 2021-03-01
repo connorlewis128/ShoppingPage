@@ -289,7 +289,7 @@ body{
     }
     @keyframes yAxis {
       100% {
-        transform: translateY(calc(-85vh + 75px));
+        transform: translateY(calc(-55vh + 25px));
       }
     }
     @keyframes shakeCart {
