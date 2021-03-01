@@ -35,13 +35,36 @@ body{
   
 }
 .navbar span{
-  
+  padding: 0 8px;
   margin-right: 3%;
 }
-
-.navbarCart{
-  padding: 6px;
+.Cart{
+  width: 100px;
+  font-size: 40px;
+  color: #000;
+  padding: 0;
+  position: relative;
 }
+
+/* .navbarCart:before{
+  content: attr(data-totalitems);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    right: -12px;
+    background: #2bd156;
+    line-height: 24px;
+    padding: 0 5px;
+    height: 24px;
+    min-width: 24px;
+    color: white;
+    text-align: center;
+    border-radius: 24px;
+
+  
+
+} */
 
 
 /* Product name and info container */
@@ -110,7 +133,7 @@ body{
 }
 /* cart */
 
-.cart{ 
+.cartWrapper{ 
   display:flex;
   justify-content: flex-start;
   margin: auto;
@@ -122,7 +145,7 @@ body{
   margin-right: 5px;
 }
 
-/* Text  styling */
+/* Prod ID */
 .ProdID {
   margin-top: 25%;
 }
@@ -201,15 +224,100 @@ body{
   
 /*  */
 /* add to cart button */
-#add-to-cart .btn{
+#add-to-cart .btn-secondary{
   width: 200px;
+  
 }
+.cartWrapper input{
+  position: relative;
+  
+}
+.cartWrapper .cart-item {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 530px;
+    right: 90px;}
+.cartWrapper .cart-item:before {
+      content: "1";
+      display: block;
+      line-height: 24px;
+      height: 24px;
+      width: 24px;
+      font-size: 12px;
+      font-weight: 600;
+      background: #000;
+      color: white;
+      border-radius: 20px;
+      text-align: center;
+    }
+.sendtocart .cart-item {
+      display: block;
+      animation: xAxis .5s forwards cubic-bezier(1, 0.44, 0.84, 0.165);
+    }
+.sendtocart .cart-item:before {
+      animation: yAxis .5s alternate forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+
+
+
+.navbarCart i :before {
+        content: attr(data-totalitems);
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        background: #2bd156;
+        line-height: 24px;
+        padding: 0 5px;
+        height: 24px;
+        min-width: 24px;
+        color: white;
+        text-align: center;
+        border-radius: 24px;
+      }
+.Cart.shake {
+      animation: shakeCart 0.4s ease-in-out forwards;
+    }
+    
+    @keyframes xAxis {
+      100% {
+        transform: translateX(calc(30vw - 600px));
+      }
+    }
+    @keyframes yAxis {
+      100% {
+        transform: translateY(calc(-85vh + 75px));
+      }
+    }
+    @keyframes shakeCart {
+      25% {
+        transform: translateX(6px);
+      }
+      50% {
+        transform: translateX(-4px);
+      }
+      75% {
+        transform: translateX(2px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }  
+
 /*  */
 .fab{
   
   padding: 0;
   font-size: 40px;
   background-color: #fff;
+  color: #000;
+}
+.fas{
+  
+  font-size: 25px;
   color: #000;
 }
 

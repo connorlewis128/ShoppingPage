@@ -10,7 +10,8 @@
   <script src="https://kit.fontawesome.com/edba3222e0.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <script src="https://connorlewis128.github.io/ShoppingPage/Dist/store.js" async></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="/Dist/cartanimation.js" async></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +57,7 @@
             
             <i> <a type="button" class="btn fab fa-gratipay"href="favorites.html" target="_self"></a></i>
                
-            <i> <a type="button" class="btn fas fa-shopping-cart" href="cart.html" target="_self"  ><span class="navbarCart">0</span></a></i>
+            <i> <a type="button" class="btn fas fa-shopping-cart Cart" href="cart.html" target="_self"  ><span class="navbarCart" data-totalitems="0"></span></a></i>
           
           </span>
         </div>
@@ -189,20 +190,25 @@
         
       </div>
     </div>
-    <div class="cart">
+    <div class="cartWrapper">
       <div id="favorite">
         <i type="button" class="btn fab fa-gratipay"></i>
       
       </div>
        <div id=add-to-cart>
         <input type="submit" value="Add to Cart" title="add-to-cart-button" class="btn btn-secondary">
-        
-       </div>
+        <span class="cart-item"></span>
+      </div>
+
+      
+
     </div>
   </section>
   
   
 
 </div>
+
+
 </body>
 </html>
