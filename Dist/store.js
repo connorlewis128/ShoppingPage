@@ -8,7 +8,7 @@ let carts = document.querySelectorAll('#add-to-cart');
 let products = [
   {
     name:'ZIPPERED HOODED SWEATSHIRT',
-    Tag:'./black jacket/front',
+    Tag:'./blackjacket/front',
     price:50.00,
     inCart:0
   }
