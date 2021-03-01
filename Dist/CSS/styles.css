@@ -34,6 +34,26 @@ body{
   margin-left: 3%;
   
 }
+/* .navbar-brand
+{
+    position: relative;
+    background: url(../images/logo.png);
+    width: 170px;
+    left: 15px;
+    max-height: 70px; 
+} */
+.navbar-brand
+{
+    position: relative;
+    background: url(../images/fakeLogo.png);
+    width: 100px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
 .navbar span{
   padding: 0 8px;
   margin-right: 3%;
@@ -126,10 +146,11 @@ body{
 }
 /* color choice */
 .colorchoice{
-  margin-top: 25%;
+  
 }
 .colorchoice h2{
   font-size: 25px;
+  margin-top: 25%;
 }
 /* cart */
 
@@ -153,18 +174,20 @@ body{
 .btn{
   line-height: 1;
 }
-.btn-secondary {
+.sizeguide .btn-secondary {
   line-height: 1.5;
   border-radius: 50px;
   color: #fff;
   background-color: rgb(202, 200, 200);
 }
-.btn-secondary:hover{
+.sizeguide .btn-secondary:hover{
   background-color: rgb(14, 13, 13);
 }
-.btn-secondary:active{
+.sizeguide .btn-secondary:focus{
   background-color: #000;
 }
+
+
 /*  */
 
  /* color buttons */
@@ -173,51 +196,52 @@ body{
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    
 
     
     
   }
-  .button1 {
+   .button1 {
   background-color: #000; /* black */
   margin: 10px;
-  border-radius: 15px;
+  border-radius: 15px !important;
   font-size: 20px;
   height: 30px;
   width: 30px;
-  
+  border: #000 .5px solid;
 
   
 }
-  .button2 {
+ .button2 {
   background-color: #fff; /* white */
   margin: 10px;
-  border-radius: 15px;
+  border-radius: 15px !important;
   font-size: 20px;
   height: 30px;
   width: 30px;
-  
+  border: #000 .5px solid;
 
   
 }
-  .button3 {
+ .button3 {
   background-color: rgb(70, 68, 68); /* grey */
   margin: 10px;
-  border-radius: 15px;
+  border-radius: 15px !important;
   font-size: 20px;
   height: 30px;
   width: 30px;
-  
+  border: #000 .5px solid;
 
   
 }
-  .button4 {
+.button4 {
   background-color: #ffef0a; /* yellow */
   margin: 10px;
-  border-radius: 15px;
+  border-radius: 15px !important;
   font-size: 20px;
   height: 30px;
   width: 30px;
-  
+  border: #000 .5px solid;
 
   
 }
@@ -226,6 +250,9 @@ body{
 /* add to cart button */
 #add-to-cart .btn-secondary{
   width: 200px;
+  line-height: 1.5;
+  background-color: #000;
+  border-radius: 50px;
   
 }
 .cartWrapper input{

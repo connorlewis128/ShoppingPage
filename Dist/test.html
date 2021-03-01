@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+    <link rel="stylesheet" href="../Dist/CSS/styles.css">
+  <script src=""></script>
   <style>
-  @-webkit-keyframes test{
+  /* @-webkit-keyframes test{
     0%{background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-0_540x.jpg?v=1602257789');
 
     }
@@ -39,13 +41,13 @@
 #steps{
     -webkit-animation-timing-function: steps(1, end);
             animation-timing-function: steps(1, end);
-}
+} */
 
 
 </style>
 </head>
 <body>
-  <div id="steps"></div>
+  <!-- <div id="steps"></div> -->
   
   <!-- <div class="test">
    <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-0_540x.webp" alt="">
@@ -53,5 +55,41 @@
   <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-3_540x.jpg" alt="">
   <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-4_360x.jpg" alt=""> 
 </div>  -->
+
+<div class="container" style="margin: auto; width: 500px;" >
+
+<div class="sizeguide">
+    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group" data-bs-toggle="button">
+          <button type="button" class="btn btn-secondary">1</button>
+          <button type="button" class="btn btn-secondary">2</button>
+          <button type="button" class="btn btn-secondary">3</button>
+          <button type="button" class="btn btn-secondary">4</button>
+        </div>
+        <div class="input-group">
+</div>
+
+<div class="colorchoice">
+    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="Second group" data-bs-toggle="button" >
+          <button type="button" class="btn btn-secondary">1</button>
+          <button type="button" class="btn btn-secondary">2</button>
+          <button type="button" class="btn btn-secondary">3</button>
+          <button type="button" class="btn btn-secondary">4</button>
+        </div>
+        <div class="input-group">
+</div>
+
+</div>
+
+<script>
+     $('[data-bs-toggle="tooltip"]').tooltip() ;
+    $('.colorchoice').on('click', function () {
+      $(this).button('toggle') 
+    });
+    $('.sizeguide').on('click', function () {
+      $(this).button('toggle') 
+    });
+  </script>
 </body>
 </html>

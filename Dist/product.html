@@ -23,7 +23,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" >CRL</a>
+        <a class="navbar-brand" href="index.html" ></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,7 +55,7 @@
           </ul>
           <span class="navbar">
             
-            <i> <a type="button" class="btn fab fa-gratipay"href="favorites.html" target="_self"></a></i>
+            <i> <a type="button" class="btn fab fa-gratipay"href="favorites.html" target="_self"> <span class="favoritesCount"></span> </a></i>
                
             <i> <a type="button" class="btn fas fa-shopping-cart Cart" href="cart.html" target="_self"  ><span class="navbarCart" data-totalitems="0"></span></a></i>
           
@@ -172,23 +172,24 @@
   <div class="clr"></div>
   <!-- Preferences and add to cart -->
   <section id="Preferences">
-    <div class="sizeguide">
+    <div class="sizeguide" data-bs-toggle="button" id="size" >
       <h2>Choose Size</h2>
-      <button type="button" class="btn btn-secondary" data-bs-toggle="button" autocomplete="off">Sm</button>
-      <button type="button" class="btn btn-secondary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Md</button>
-      <button type="button" class="btn btn-secondary"  data-bs-toggle="button" autocomplete="off">Lg</button>
-      <button type="button" class="btn btn-secondary"  data-bs-toggle="button" autocomplete="off">XL</button>
+  
+      <button type="button" class="btn btn-secondary"  id="size Sm"  autocomplete="off">Sm</button>
+      <button type="button" class="btn btn-secondary" id="size Md" autocomplete="off" >Md</button>
+      <button type="button" class="btn btn-secondary" id="size Lg" autocomplete="off">Lg</button>
+      <button type="button" class="btn btn-secondary" id="size XL" autocomplete="off">XL</button>
     </div>
     <div class="colorchoice">
       <h2>Choose Color</h2>
-      <div class="btn-group">
-        <button class="button1 active"></button>
-        <button class="button2 "></button>
-        <button class="button3 "></button>
-        <button class="button4 "></button>
+      <div class="colorchoice btn-group " data-bs-toggle="button" id="color">
+        <button type="button" class="btn button1" id="black" ></button>
+        <button type="button" class="btn button2" id="white" ></button>
+        <button type="button" class="btn button3" id="grey" ></button>
+        <button type="button" class="btn button4" id="yellow" ></button>
         
         
-      </div>
+    </div>
     </div>
     <div class="cartWrapper">
       <div id="favorite">

@@ -1,5 +1,13 @@
-// remove item
+// size change
+  let size = document.querySelectorAll('#size');
+  console.log(size);
 
+  size.forEach(size => console.log(size));
+// 
+
+// color change
+
+// 
 
 
 
@@ -190,3 +198,4 @@ onLoadCartNumbers();
 displayCart();
 removeItem();
 quantityChange();
+
