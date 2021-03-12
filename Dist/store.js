@@ -98,7 +98,7 @@ function cartNumbers(products) {
         <div class="products">
           
         <span>${products.name}</span>
-        <img src="./images/${products.Tag}.webp">
+        <img src="${products.Tag}">
         
         <i  class="btn-remove fas fa-times-circle"></i>
 
