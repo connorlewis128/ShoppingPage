@@ -6,7 +6,7 @@ let carts = document.querySelectorAll('#add-to-cart');
 let products = [
   {
     name:'ZIPPERED HOODED SWEATSHIRT',
-    Tag:'Dist/images/new product/black jacket/front.webp',
+    Tag:'https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp',
     price:50.00,
     inCart:0
   }
