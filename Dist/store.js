@@ -1,13 +1,3 @@
-// size change
-  let size = document.querySelectorAll('#size');
-  console.log(size);
-
-  size.forEach(size => console.log(size));
-// 
-
-// color change
-
-// 
 
 
 
@@ -16,7 +6,7 @@ let carts = document.querySelectorAll('#add-to-cart');
 let products = [
   {
     name:'ZIPPERED HOODED SWEATSHIRT',
-    Tag:'./blackjacket/front',
+    Tag:'Dist/images/new product/black jacket/front.webp',
     price:50.00,
     inCart:0
   }
@@ -197,5 +187,5 @@ function removeItem(){
 onLoadCartNumbers();
 displayCart();
 removeItem();
-quantityChange();
+
 
