@@ -8,8 +8,8 @@ console.log(sizes);
    let sizeSelection = size;
   sizeSelection.addEventListener('click',function(event){
     console.log('clicked')
-   let sizeSelection = event.target
-   sizeSelection.setAttribute('aria-pressed',true);
+   let size = event.target
+   size.setAttribute('aria-pressed',true);
    
   })
   
