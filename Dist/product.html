@@ -9,7 +9,7 @@
 
   <script src="https://kit.fontawesome.com/edba3222e0.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <script src="https://connorlewis128.github.io/ShoppingPage/Dist/store.js" async></script>
+  <script src="/Dist/store.js" async></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
   <script src="https://connorlewis128.github.io/ShoppingPage/Dist/cartanimation.js" async></script>
   <meta charset="UTF-8">
@@ -172,21 +172,23 @@
   <div class="clr"></div>
   <!-- Preferences and add to cart -->
   <section id="Preferences">
-    <div class="sizeguide" data-bs-toggle="button" id="size" >
+    <div class="sizeguide" >
       <h2>Choose Size</h2>
-  
-      <button type="button" class="btn btn-secondary"  id="size Sm"  autocomplete="off">Sm</button>
-      <button type="button" class="btn btn-secondary" id="size Md" autocomplete="off" >Md</button>
-      <button type="button" class="btn btn-secondary" id="size Lg" autocomplete="off">Lg</button>
-      <button type="button" class="btn btn-secondary" id="size XL" autocomplete="off">XL</button>
+      <div id="size" >
+      <button type="button" class="btn btn-secondary Sm"  data-bs-toggle="button"  >Sm</button>
+      <button type="button" class="btn btn-secondary Md" data-bs-toggle="button"  >Md</button>
+      <button type="button" class="btn btn-secondary Lg" data-bs-toggle="button"  >Lg</button>
+      <button type="button" class="btn btn-secondary XL" data-bs-toggle="button"  >XL</button>
+    </div>
     </div>
     <div class="colorchoice">
       <h2>Choose Color</h2>
-      <div class="colorchoice btn-group " data-bs-toggle="button" id="color">
-        <button type="button" class="btn button1" id="black" ></button>
-        <button type="button" class="btn button2" id="white" ></button>
-        <button type="button" class="btn button3" id="grey" ></button>
-        <button type="button" class="btn button4" id="yellow" ></button>
+      <div class="btn-group "  id="color">
+        
+        <button type="button" class="btn button1 colors " data-bs-toggle="button"  id="black" ></button>
+        <button type="button" class="btn button2 colors " data-bs-toggle="button"  id="white" ></button>
+        <button type="button" class="btn button3 colors " data-bs-toggle="button"  id="grey" ></button>
+        <button type="button" class="btn button4 colors " data-bs-toggle="button" id="yellow" ></button>
         
         
     </div>

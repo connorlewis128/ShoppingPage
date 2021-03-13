@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $('#add-to-cart').on('click',function(){
     
-    var button = $(this);
-    var cart = $('.Cart');
-    var cartTotal = cart.attr('data-totalitems');
-    var newCartTotal = parseInt(cartTotal) + 1;
+    let button = $(this);
+    let cart = $('.Cart');
+    let cartTotal = cart.attr('data-totalitems');
+    let newCartTotal = parseInt(cartTotal) + 1;
     
     button.addClass('sendtocart');
     setTimeout(function(){

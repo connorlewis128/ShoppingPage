@@ -1,4 +1,40 @@
 
+// Size Selection
+let sizes = document.getElementById('size').getElementsByClassName('btn');
+console.log(sizes);
+ sizes = Array.from(sizes);
+
+ sizes.forEach(size => {
+   let sizeSelection = size;
+  sizeSelection.addEventListener('click',function(event){
+    console.log('clicked')
+   let sizeSelection = event.target
+   sizeSelection.setAttribute('aria-pressed',true);
+   
+  })
+  
+});
+// Color Selection
+let colors = document.getElementById('color').getElementsByClassName('colors');
+console.log(colors);
+ colors = Array.from(colors);
+
+ colors.forEach(color => {
+   let colorSelection = color;
+  colorSelection.addEventListener('click',function(event){
+    console.log('clicked')
+   let colorSelection = event.target
+   colorSelection.setAttribute('aria-pressed',true);
+   
+
+  })
+  
+
+});
+// Color change
+
+
+
 
 
 
