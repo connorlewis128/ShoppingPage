@@ -6,90 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
     <link rel="stylesheet" href="../Dist/CSS/styles.css">
-  <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <style>
-  /* @-webkit-keyframes test{
-    0%{background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-0_540x.jpg?v=1602257789');
-
-    }
-    25%{
-        background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-1_540x.jpg?v=1602258059');
-    }
-    50%{
-        background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-3_540x.jpg?v=1602258059');
-    }
-    75%{
-        background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/a-cold-wall_acw_ACWMO030-BLK-4_360x.jpg?v=1602258059');
-    }
-    100%{
-        background-image: url('https://cdn.shopify.com/s/files/1/0123/0644/8443/products/Unknown-1_b37e1a4d-3481-4d51-82c3-c0995495d845_720x.jpg?v=1602262075');
-    }
-    
-}
- div{
-    width: 350px;
-    height: 250px;
-    margin: auto;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    -webkit-animation: test 12s infinite;
-            animation: test 12s infinite;
-    -webkit-animation-timing-function: steps(1, end);
-            animation-timing-function: steps(1, end);
-} 
-#steps{
-    -webkit-animation-timing-function: steps(1, end);
-            animation-timing-function: steps(1, end);
-} */
-
+  
 
 </style>
 </head>
 <body>
-  <!-- <div id="steps"></div> -->
   
-  <!-- <div class="test">
-   <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-0_540x.webp" alt="">
-  <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-1_720x.webp" alt="">
-  <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-3_540x.jpg" alt="">
-  <img src="/Dist/images/a-cold-wall_acw_ACWMO030-BLK-4_360x.jpg" alt=""> 
-</div>  -->
-
-<div class="container" style="margin: auto; width: 500px;" >
-
-<div class="sizeguide">
-    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group" role="group" aria-label="First group" data-bs-toggle="button">
-          <button type="button" class="btn btn-secondary">1</button>
-          <button type="button" class="btn btn-secondary">2</button>
-          <button type="button" class="btn btn-secondary">3</button>
-          <button type="button" class="btn btn-secondary">4</button>
-        </div>
-        <div class="input-group">
-</div>
-
-<div class="colorchoice">
-    <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group" role="group" aria-label="Second group" data-bs-toggle="button" >
-          <button type="button" class="btn btn-secondary">1</button>
-          <button type="button" class="btn btn-secondary">2</button>
-          <button type="button" class="btn btn-secondary">3</button>
-          <button type="button" class="btn btn-secondary">4</button>
-        </div>
-        <div class="input-group">
-</div>
-
-</div>
-
-<script>
-     $('[data-bs-toggle="tooltip"]').tooltip() ;
-    $('.colorchoice').on('click', function () {
-      $(this).button('toggle') 
-    });
-    $('.sizeguide').on('click', function () {
-      $(this).button('toggle') 
-    });
-  </script>
+  <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+  
+    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+  
+    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+  </div>
+  
 </body>
 </html>

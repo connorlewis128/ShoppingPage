@@ -144,10 +144,7 @@ body{
 .sizeguide h2{
   font-size: 25px;
 }
-/* color choice */
-.colorchoice{
-  
-}
+
 .colorchoice h2{
   font-size: 25px;
   margin-top: 25%;
@@ -174,33 +171,58 @@ body{
 .btn{
   line-height: 1;
 }
-.sizeguide .btn-secondary {
+
+
+.btn-group1 .btn-secondary{
+  margin: 0 5px;
   line-height: 1.5;
-  border-radius: 50px;
-  color: #fff;
-  background-color: rgb(202, 200, 200);
+  width: 50px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #f1f1ef;
 }
-.sizeguide .btn-secondary:hover{
-  background-color: rgb(14, 13, 13);
+/* .btn-group1 .btn-secondary:active {
+  
+} */
+.btn-group1 > .btn-check:checked + .btn{
+  background-color: #080b13;
 }
-.sizeguide .btn-secondary:focus{
-  background-color: #000;
-}
-
-
 /*  */
 
  /* color buttons */
-  .btn-group{
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    
+ .btn-group2 .btn-secondary{
+  margin: 0 5px;
+  line-height: 1.5;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f1f1ef;
+ 
+  
+}
 
-    
-    
-  }
+
+.btn-group2  .black{
+  background-color: #000 ;
+  
+}
+.btn-group2  .white{
+  background-color: #fff ;
+  
+}
+.btn-group2  .grey{
+  background-color: rgb(70, 68, 68) ;
+  
+}
+.btn-group2  .yellow{
+  background-color: #ffef0a ;
+  
+}
+
+
+
+
+/* old color buttons */
    .button1 {
   background-color: #000; /* black */
   margin: 10px;
@@ -244,7 +266,7 @@ body{
   border: #000 .5px solid;
 
   
-}
+} 
   
 /*  */
 /* add to cart button */
@@ -351,7 +373,20 @@ body{
 
 /* Image Animation */
 
-@-webkit-keyframes blackjacket{
+.showcase{
+  width: 764px;
+  height: 875px;
+  margin: auto;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-animation:blackjacket 6s infinite;
+          animation:blackjacket 6s infinite;
+  -webkit-animation-timing-function: steps(1, end);
+          animation-timing-function: steps(1, end);
+} 
+
+@keyframes  blackjacket{
   /* black */
   0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp')
 
@@ -369,73 +404,62 @@ body{
 
   
 }
-@-webkit-keyframes whitejacket{
+@keyframes  whitejacket{
   /* white */
-  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp')
+  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/white%20jacket/front.webp')
 
   }
   33.3%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/back.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/white%20jacket/back.webp');
   }
   66.6%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/white%20jacket/side.webp');
   }
   
   100%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/white%20jacket/side.webp');
   }
   
 
   
 }
-@-webkit-keyframes greyjacket{
+@keyframes  greyjacket{
   /* grey */
-  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp')
+  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/grey%20jacket/front.webp')
 
   }
   33.3%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/back.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/grey%20jacket/back.webp');
   }
   66.6%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/grey%20jacket/side.webp');
   }
   
   100%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/grey%20jacket/side.webp');
   }
 
   
 }
-@-webkit-keyframes yellowjacket{
+@keyframes yellowjacket{
   /* yellow*/
-  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/front.webp')
+  0%{background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/yellow%20jacket/front.webp')
 
   }
   33.3%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/back.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/yellow%20jacket/back.webp');
   }
   66.6%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/yellow%20jacket/side.webp');
   }
   
   100%{
-      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/black%20jacket/side.webp');
+      background-image: url('https://connorlewis128.github.io/ShoppingPage/Dist/images/new%20product/yellow%20jacket/side.webp');
   }
 
   
 }
-.showcase{
-  width: 764px;
-  height: 875px;
-  margin: auto;
-  background-size: contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-animation: blackjacket 6s infinite;
-          animation: blackjacket 6s infinite;
-  -webkit-animation-timing-function: steps(1, end);
-          animation-timing-function: steps(1, end);
-} 
+
 #steps{
   -webkit-animation-timing-function: steps(1, end);
           animation-timing-function: steps(1, end);

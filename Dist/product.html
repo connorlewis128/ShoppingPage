@@ -9,7 +9,7 @@
 
   <script src="https://kit.fontawesome.com/edba3222e0.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <script src="https://connorlewis128.github.io/ShoppingPage/Dist/store.js" async></script>
+  <script src="store.js" async></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
   <script src="https://connorlewis128.github.io/ShoppingPage/Dist/cartanimation.js" async></script>
   <meta charset="UTF-8">
@@ -175,20 +175,37 @@
     <div class="sizeguide" >
       <h2>Choose Size</h2>
       <div id="size" >
-      <button type="button" class="btn btn-secondary Sm"  data-bs-toggle="button"  >Sm</button>
-      <button type="button" class="btn btn-secondary Md" data-bs-toggle="button"  >Md</button>
-      <button type="button" class="btn btn-secondary Lg" data-bs-toggle="button"  >Lg</button>
-      <button type="button" class="btn btn-secondary XL" data-bs-toggle="button"  >XL</button>
+     
+      <div class="btn-group1" role="group1" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="sizeradio" id="sm" autocomplete="off" checked>
+        <label class="btn btn-secondary" for="sm">Sm</label>
+      
+        <input type="radio" class="btn-check" name="sizeradio" id="md" autocomplete="off">
+        <label class="btn btn-secondary" for="md">Md</label>
+      
+        <input type="radio" class="btn-check" name="sizeradio" id="lg" autocomplete="off">
+        <label class="btn btn-secondary" for="lg">Lg</label>
+        <input type="radio" class="btn-check" name="sizeradio" id="xl" autocomplete="off">
+        <label class="btn btn-secondary" for="xl">XL</label>
+      </div>
     </div>
     </div>
     <div class="colorchoice">
       <h2>Choose Color</h2>
-      <div class="btn-group "  id="color">
+      <div   id="color">
         
-        <button type="button" class="btn button1 colors " data-bs-toggle="button"  id="black" ></button>
-        <button type="button" class="btn button2 colors " data-bs-toggle="button"  id="white" ></button>
-        <button type="button" class="btn button3 colors " data-bs-toggle="button"  id="grey" ></button>
-        <button type="button" class="btn button4 colors " data-bs-toggle="button" id="yellow" ></button>
+        <div class="btn-group2" role="group2" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="colorradio" id="black" autocomplete="off" >
+          <label class="btn btn-secondary black" for="black"></label>
+        
+          <input type="radio" class="btn-check" name="colorradio" id="white" autocomplete="off">
+          <label class="btn btn-secondary white" for="white"></label>
+        
+          <input type="radio" class="btn-check" name="colorradio" id="grey" autocomplete="off">
+          <label class="btn btn-secondary grey" for="grey"></label>
+          <input type="radio" class="btn-check" name="colorradio" id="yellow" autocomplete="off">
+          <label class="btn btn-secondary yellow" for="yellow"></label>
+        </div>
         
         
     </div>
