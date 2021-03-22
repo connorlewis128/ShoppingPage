@@ -18,7 +18,7 @@ const showcase = document.querySelector('.showcase');
 
 
 
-loadEventListeners();
+
 
 
   
