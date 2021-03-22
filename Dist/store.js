@@ -1,27 +1,11 @@
 
 
-
-
-
-
-
-  
-
-
-
 const sizeBtn = document.querySelector('.btn-group1');
 
 
 const showcase = document.querySelector('.showcase');
 
 
-
-
-
-
-
-
-  
 
 // color change
 
