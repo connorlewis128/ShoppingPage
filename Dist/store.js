@@ -8,14 +8,28 @@
   
 
 
-// // Color change
-// let colorChange = document.querySelector('.showcase');
-// if(colorChange != null)
-// colorChange.style.animation='greyjacket 6s infinite';
-// colorChange.style.animationTimingFunction= 'steps(1, end)';
+
+const sizeBtn = document.querySelector('.btn-group1');
+
+
+const showcase = document.querySelector('.showcase');
 
 
 
+
+
+loadEventListeners();
+
+
+  
+
+// color change
+
+function colorChange() {
+  showcase.style.animation = document.querySelector('input[name="colorradio"]:checked').value + ' 6s infinite';
+  
+}
+// 
 
 
 let carts = document.querySelectorAll('#add-to-cart');
