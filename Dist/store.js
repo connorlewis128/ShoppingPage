@@ -217,5 +217,5 @@ function removeItem(){
 onLoadCartNumbers();
 displayCart();
 removeItem();
-
+colorChange();
 
