@@ -17,8 +17,8 @@ body{
 #gridContainer{
   display: grid;
   padding: 25px;
-  width: 100vw;
-  height:99vh;
+  width: 100%;
+  height:100vh;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 1fr;
   row-gap: 1rem;
@@ -73,6 +73,7 @@ body{
   padding: 0;
   position: relative;
 }
+
 
 /* .navbarCart:before{
   content: attr(data-totalitems);
@@ -267,23 +268,27 @@ body{
   
 /*  */
 /* add to cart button */
+#add-to-cart{
+  position: relative;
+}
 #add-to-cart .btn-secondary{
   width: 200px;
   line-height: 1.5;
   background-color: #000;
   border-radius: 50px;
-  
 }
-.cartWrapper input{
-  position: relative;
-  
+
+ .cart-item{
+  position: absolute;
+  top: -5px;
+  right: -5px;
 }
-.cartWrapper .cart-item {
+/* .cartWrapper  .cart-item {
     position: absolute;
     height: 24px;
     width: 24px;
     top: 530px;
-    right: 90px;}
+    right: 110px;}  */
 .cartWrapper .cart-item:before {
       content: "1";
       display: block;
@@ -330,12 +335,12 @@ body{
     
     @keyframes xAxis {
       100% {
-        transform: translateX(calc(30vw - 600px));
+        transform: translateX(calc(35vw - 650px));
       }
     }
     @keyframes yAxis {
       100% {
-        transform: translateY(calc(-55vh + 25px));
+        transform: translateY(calc(-60vh + 50px));
       }
     }
     @keyframes shakeCart {
@@ -570,14 +575,10 @@ body{
   #gridContainer{
     grid-template-columns:repeat(2, .75fr) ;
     grid-template-rows: 1fr;
-  
     grid-template-areas:
     'ProdInfo'
     'ProdView'
-    'Preferences'
-    
-    ;
-
+    'Preferences';
   }
  
   #Preferences{
@@ -627,9 +628,17 @@ body{
     grid-row-end: 2;
   }
 
+  .cart-item{
+    display: none;
+  }
+  .sendtocart .cart-item{
+    animation: none;
+  }
+  .sendtocart .cart-item::before {
+  animation: none;
 
-
-} 
+  }
+}
 
  @media(max-width: 500px){
   #gridContainer{
