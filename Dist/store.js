@@ -6,12 +6,7 @@ const sizeBtn = document.querySelector('.btn-group1');
 const showcase = document.querySelector('.showcase');
 
 
-// color change
 
-function colorChange() {
-  showcase.style.animation = document.querySelector('input[name="colorradio"]:checked').value + ' 6s infinite';
-  
-}
 
 let carts = document.querySelectorAll('#add-to-cart');
 let favorites = document.querySelectorAll('#favorite');
@@ -34,12 +29,6 @@ for (let i =0; i < carts.length; i++) {
   })
 }
 
-for (let i =0; i < favorites.length; i++) {
-  favorites[i].addEventListener('click', () =>{
-    favItems(products[i]);
-    totalCost(products[i])
-  })
-}
 function onLoadCartNumbers(){
   let productNumbers =localStorage.getItem('cartNumbers');
 
@@ -47,15 +36,6 @@ function onLoadCartNumbers(){
     document.querySelector('span .navbarCart').textContent = productNumbers;
   }
 }
-
-function onLoadfavNumbers(){
-  let favNumbers =localStorage.getItem('favItems');
-
-  if(favNumbers){
-    document.querySelector('span .favoritesCount').textContent = favNumbers;
-  }
-}
-
 
 // Number of items added to cart
 function cartNumbers(products) {
@@ -73,11 +53,33 @@ function cartNumbers(products) {
   
   setItems(products);
 }
+// favorites
+for (let i =0; i < favorites.length; i++) {
+  favorites[i].addEventListener('click', () =>{
+    favItems(products[i]);
+    totalCost(products[i])
+  })
+}
+
+
+function onLoadfavNumbers(){
+  let favNumbers = localStorage.getItem('favItems');
+
+  if(favNumbers){
+    document.querySelector('span .favoritesCount').textContent = favNumbers;
+  }
+}
+
+
+
+
+// number of favorites added
 function favItems(products) {
   let favNumbers = localStorage.getItem('favItems');
   favNumbers = parseInt(favNumbers);
   if(favNumbers){
     localStorage.setItem('favItems', favNumbers + 1) ;
+    console.log(favNumbers)
     document.querySelector('span .favoritesCount').textContent = favNumbers + 1;
 
   }  else{
@@ -88,6 +90,7 @@ function favItems(products) {
   
   setItems(products);
 }
+
   function setItems(products){
     let cartItems = localStorage.getItem('productsInCart')
     cartItems = JSON.parse(cartItems)
@@ -145,7 +148,7 @@ function favItems(products) {
         <i  class="btn-remove fas fa-times-circle"></i>
 
         <div class="productPrice"> $${products.price}</div> 
-        <div class="productQuantity"> <span><i  class="fas fa-arrow-alt-circle-left btn-minus" onClick="quantityChange()" value="minus"></i>${products.inCart} <i class="fas fa-arrow-alt-circle-right btn-plus" onClick="quantityChange()" value="plus"></i></span></div> 
+        <div class="productQuantity"> <span> <i  class="fas fa-arrow-alt-circle-left btn-minus" ></i> </span> <span> ${products.inCart}</span><span> <i class="fas fa-arrow-alt-circle-right btn-plus"></i></span></div> 
         <div class="Total"> $${products.price * products.inCart}</div></div>
         `
       });
@@ -172,25 +175,35 @@ function removeItem(){
         let button = removeItem[i]
   button.addEventListener('click',function(event){
     console.log('clicked')
-  let removeItem =event.target
+  let removeItem = event.target
   removeItem.parentElement.remove();
 
 });
 }}
-// not sure how to makethis work
-function quantityChange(){
 
 
-  if (document.querySelector('btn-plus').value) {
-   products.inCart = products.inCart + 1
-  }
-  else if(document.querySelector('btn-minus').value){
-     products.inCart = products.inCart - 1
-  }
+  
+
+
+
+
+
+// color change
+
+function colorChange() {
+  showcase.style.animation = document.querySelector('input[name="colorradio"]:checked').value + ' 6s infinite';
 }
-// 
 
-
+// quantity change
+function quantityChange() {
+  
+  if(document.querySelector('btn-plus'))
+  {
+    products.inCart = products.inCart +1;
+  }
+  else if (document.querySelector('btn-minus')){
+  products.inCart = products.inCart - 1;}
+  }
 
 
 
@@ -198,7 +211,8 @@ function quantityChange(){
 onLoadCartNumbers();
 onLoadfavNumbers();
 displayCart();
-quantityChange();
 removeItem();
-colorChange();
+quantityChange();
+
+
 

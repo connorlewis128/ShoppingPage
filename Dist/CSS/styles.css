@@ -504,16 +504,10 @@ span .navbar{
   
   
 }
-.products .productQuantity{
-  
- 
-  
-  margin:10px;
-  
-  
-}
+
 .products .productQuantity span{
-  
+  margin-left: 10px;
+  margin-right: 10px;
   padding-left: 6px;
   padding-right: 6px;
  
