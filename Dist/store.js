@@ -6,16 +6,16 @@ const sizeBtn = document.querySelector('.btn-group1');
 const showcase = document.querySelector('.showcase');
 
 
-
 // color change
 
 function colorChange() {
   showcase.style.animation = document.querySelector('input[name="colorradio"]:checked').value + ' 6s infinite';
   
 }
-// 
 
 let carts = document.querySelectorAll('#add-to-cart');
+let favorites = document.querySelectorAll('#favorite');
+console.log(favorites)
 let products = [
   {
     name:'ZIPPERED HOODED SWEATSHIRT',
@@ -34,11 +34,25 @@ for (let i =0; i < carts.length; i++) {
   })
 }
 
+for (let i =0; i < favorites.length; i++) {
+  favorites[i].addEventListener('click', () =>{
+    favItems(products[i]);
+    totalCost(products[i])
+  })
+}
 function onLoadCartNumbers(){
   let productNumbers =localStorage.getItem('cartNumbers');
 
   if(productNumbers){
     document.querySelector('span .navbarCart').textContent = productNumbers;
+  }
+}
+
+function onLoadfavNumbers(){
+  let favNumbers =localStorage.getItem('favItems');
+
+  if(favNumbers){
+    document.querySelector('span .favoritesCount').textContent = favNumbers;
   }
 }
 
@@ -56,6 +70,21 @@ function cartNumbers(products) {
     document.querySelector('span .navbarCart').textContent = 1;
   }
 
+  
+  setItems(products);
+}
+function favItems(products) {
+  let favNumbers = localStorage.getItem('favItems');
+  favNumbers = parseInt(favNumbers);
+  if(favNumbers){
+    localStorage.setItem('favItems', favNumbers + 1) ;
+    document.querySelector('span .favoritesCount').textContent = favNumbers + 1;
+
+  }  else{
+    localStorage.setItem('favItems',1) ;
+    document.querySelector('span .favoritesCount').textContent = 1;
+  }
+  
   
   setItems(products);
 }
@@ -116,7 +145,7 @@ function cartNumbers(products) {
         <i  class="btn-remove fas fa-times-circle"></i>
 
         <div class="productPrice"> $${products.price}</div> 
-        <div class="productQuantity"> <span><i  class="fas fa-arrow-alt-circle-left btn-minus"></i>${products.inCart} <i class="fas fa-arrow-alt-circle-right btn-plus"></i></span></div> 
+        <div class="productQuantity"> <span><i  class="fas fa-arrow-alt-circle-left btn-minus" onClick="quantityChange()" value="minus"></i>${products.inCart} <i class="fas fa-arrow-alt-circle-right btn-plus" onClick="quantityChange()" value="plus"></i></span></div> 
         <div class="Total"> $${products.price * products.inCart}</div></div>
         `
       });
@@ -134,18 +163,7 @@ function cartNumbers(products) {
     }
   };
 
-  // remove cart items
-// const removecartItems = document.getElementsByClassName('btn-remove') ;
-// console.log(removecartItems)
-// for (let i = 0; i < removecartItems.length; i++){
-//   let button = removecartItems[i]
-//   button.addEventListener('click',function(event){
-//     console.log('clicked')
-//     let removecartItems = event.target
-//      removecartItems.parentElement.remove();
-      
-//   })
-// }
+
 
 function removeItem(){
   let removeItem = document.getElementsByClassName('btn-remove');
@@ -159,46 +177,28 @@ function removeItem(){
 
 });
 }}
-
-// function quantityChange(){
-  
-//   let  plusItem = document.getElementsByClassName('btn-plus')
-//   let  minusItem = document.getElementsByClassName('btn-minus')
-//   console.log(plusItem);
-//   console.log(minusItem)
-//   let plusItem = plusItem['productsInCart']
-//   let minusbutton = minusItem['productsInCart']
-//   if('productsInCart' < 0){
-//     plusItem.addEventListener('click',function(event){
-//       console.log('clicked')
-//     let plusItem =event.target
-//     plusItem.productsInCart + 1;
-//   });
-
-  
-  
-// }}
+// not sure how to makethis work
+function quantityChange(){
 
 
-// add 1 to quantity
-// const quantityPluscartItems = document.getElementsByClassName('fas fa-arrow-alt-circle-right');
-// console.log(quantityPluscartItems)
-// for (let i = 0; i < quantityPluscartItems.length; i++){
-//   let button = quantityPluscartItems[i]
-//   button.addEventListener('click',function(event){
-//     console.log('clicked')
-//     let quantityPluscartItems = event.target
-//     quantityPluscartItems = ('${products.inCart}' + 1);
-      
-//   })
-// }
-// subtract 1 from quantity
+  if (document.querySelector('btn-plus').value) {
+   products.inCart = products.inCart + 1
+  }
+  else if(document.querySelector('btn-minus').value){
+     products.inCart = products.inCart - 1
+  }
+}
+// 
+
+
 
 
 
 
 onLoadCartNumbers();
+onLoadfavNumbers();
 displayCart();
+quantityChange();
 removeItem();
 colorChange();
 

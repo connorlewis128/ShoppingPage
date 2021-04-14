@@ -61,13 +61,31 @@ body{
     background-position: center center;
 }
 
+span .favoritesCount{
+  font-size: 25px;
+  padding-left:0;
+  margin-left: 0;
+  
+}
 
+span.navbarCart{
+  font-weight: 400;
+}
+i .fas{
+  margin-top: 23px;
+  margin-left: -25px;
+}
+span .navbar{
+  max-width: 210px;
+}
 .navbar span{
-  padding: 0 8px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 0 0px;
   margin-right: 3%;
 }
 .Cart{
   width: 100px;
+  height: 45px;
   font-size: 40px;
   color: #000;
   padding: 0;
@@ -75,25 +93,6 @@ body{
 }
 
 
-/* .navbarCart:before{
-  content: attr(data-totalitems);
-    font-size: 12px;
-    font-weight: 600;
-    position: absolute;
-    top: 0px;
-    right: -12px;
-    background: #2bd156;
-    line-height: 24px;
-    padding: 0 5px;
-    height: 24px;
-    min-width: 24px;
-    color: white;
-    text-align: center;
-    border-radius: 24px;
-
-  
-
-} */
 
 
 /* Product name and info container */
@@ -367,9 +366,11 @@ body{
   color: #000;
 }
 .fas{
-  
+  margin-top: 15px;
+  margin-right: -15px;
   font-size: 25px;
   color: #000;
+
 }
 
 
@@ -571,6 +572,15 @@ body{
 
 
 /* media queries */
+
+@media (max-width: 992px) {
+  .navbar {
+  
+    height: 100px;
+    justify-content: center;
+    background-color: white;
+  }
+}
 @media(max-width: 768px){
   #gridContainer{
     grid-template-columns:repeat(2, .75fr) ;
