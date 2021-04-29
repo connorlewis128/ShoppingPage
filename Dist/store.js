@@ -207,6 +207,13 @@ const sizeBtn = document.querySelector(".btn-group1");
 
 const showcase = document.querySelector(".showcase");
 
+// color change
+
+function colorChange() {
+  showcase.style.animation =
+    document.querySelector('input[name="colorradio"]:checked').value + " infinite 6s";
+}
+
 let carts = document.querySelectorAll("#add-to-cart");
 let favorites = document.querySelectorAll("#favorite");
 console.log(favorites);
@@ -417,13 +424,7 @@ function quantityChange() {
 
 
 
-// color change
 
-function colorChange() {
-  showcase.style.animation =
-    document.querySelector('input[name="colorradio"]:checked').value +
-    "6s infinite";
-}
 onLoadCartNumbers();
 onLoadfavNumbers();
 displayCart();
