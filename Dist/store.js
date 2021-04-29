@@ -365,13 +365,7 @@ function removeItem() {
   }
 }
 
-// color change
 
-function colorChange() {
-  showcase.style.animation =
-    document.querySelector('input[name="colorradio"]:checked').value +
-    "6s infinite";
-}
 
 // quantity change
 function quantityChange() {
@@ -421,6 +415,15 @@ function quantityChange() {
   });
 }
 
+
+
+// color change
+
+function colorChange() {
+  showcase.style.animation =
+    document.querySelector('input[name="colorradio"]:checked').value +
+    "6s infinite";
+}
 onLoadCartNumbers();
 onLoadfavNumbers();
 displayCart();
