@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-  
+
 
   <script src="https://kit.fontawesome.com/edba3222e0.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
   <script src="store.js" async></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://connorlewis128.github.io/ShoppingPage/Dist/cartanimation.js" async></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopping Page</title>
 </head>
+
 <body>
   <!-- Nav -->
   <section>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" ></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Category
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -40,7 +47,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Collection
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -51,188 +59,201 @@
               </ul>
             </li>
             </li>
-            
+
           </ul>
           <span class="navbar">
-            
-            <i> <a type="button" class="btn fab fa-gratipay Cart"href="favorites.html" target="_self"> <span class="favoritesCount"
-            data-totalitems="0"  ></span> </a></i>
-               
-            <i> <a type="button" class="btn fas fa-shopping-cart Cart" href="cart.html" target="_self"  ><span class="navbarCart" data-totalitems="0" ></span></a></i>
-          
+
+            <i> <a type="button" class="btn fab fa-gratipay Cart" href="#" target="_self"> <span class="favoritesCount"
+                  data-totalitems="0"></span> </a></i>
+
+            <i> <a type="button" class="btn fas fa-shopping-cart Cart" href="cart.html" target="_self"><span
+                  class="navbarCart" data-totalitems="0"></span></a></i>
+
           </span>
         </div>
       </div>
     </nav>
   </section>
-<!-- flex container -->
-<div id="gridContainer">
+  <!-- flex container -->
+  <div id="gridContainer">
 
-  
-  <!-- Product Name/ Information -->
-  <section id="ProdInfo">
-    <div>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Category</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Jacket</li>
-      </ol>
-    </nav>
-    </div>
-    <div class="ProdID">
-      <h1>ZIPPERED HOODED SWEATSHIRT</h1>
-      <h2>$50.00</h2>
-    </div>
-    <!-- Accordion -->
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Product Information
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body"> 
-            <h3>MATERIALS</h3> 
-            <h4>OUTER SHELL</h4>   
-            <p>
-              50% polyester
-              <br>
-              43% cotton
-              <br>
-              7% elastane
-            </p>
-            <h4>LINING</h4>
-            <p>
-              50% polyester
-              <br>
-              43% cotton
-              <br>
-              7% elastane
-            </p>
+
+    <!-- Product Name/ Information -->
+    <section id="ProdInfo">
+      <div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Category</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Jacket</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="ProdID">
+        <h1>ZIPPERED HOODED SWEATSHIRT</h1>
+        <h2>$50.00</h2>
+      </div>
+      <!-- Accordion -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Product Information
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <h3>MATERIALS</h3>
+              <h4>OUTER SHELL</h4>
+              <p>
+                50% polyester
+                <br>
+                43% cotton
+                <br>
+                7% elastane
+              </p>
+              <h4>LINING</h4>
+              <p>
+                50% polyester
+                <br>
+                43% cotton
+                <br>
+                7% elastane
+              </p>
 
             </div>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Details
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-           <p>
-            Machine wash max. 30ºC/86ºF delicate cycle
-            <br>
-            Do not use bleach / whitener
-            <br>
-            Iron maximum 110ºC/230ºF
-            <br>
-            Do not dry clean
-            <br>
-            Do not tumble dry
-           <br>
-            Wash inside out
-            <br>
-            Iron inside out
-            
-           </p> 
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Details
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                Machine wash max. 30ºC/86ºF delicate cycle
+                <br>
+                Do not use bleach / whitener
+                <br>
+                Iron maximum 110ºC/230ºF
+                <br>
+                Do not dry clean
+                <br>
+                Do not tumble dry
+                <br>
+                Wash inside out
+                <br>
+                Iron inside out
 
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Shipping and Returns
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <h4>Shipping</h4>
+              <p>Standard shipping is free on orders over $50.00 & should arrive in 2-4 business days under normal
+                circumstances</p>
+              <h4>Exchanges and Returns</h4>
+              <p>Contact customer support within 30 days of purchase to return and exchange products</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Shipping and Returns
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <h4>Shipping</h4>
-            <p>Standard shipping is free on orders over $50.00 & should arrive in 2-4 business days under normal circumstances</p>
-            <h4>Exchanges and Returns</h4>
-            <p>Contact customer support within 30 days of purchase to return and exchange products</p>
+      <!--  -->
+
+    </section>
+
+    <!-- Product View -->
+    <section id="ProdView">
+      <div class="showcase">
+
+
+      </div>
+    </section>
+
+    <!-- Preferences and add to cart -->
+    <section id="Preferences">
+      <div class="prefContainer">
+        <div class="sizeguide">
+          <h2>Choose Size</h2>
+          <div id="size">
+
+            <div class="btn-group1" role="group1" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="sizeradio" id="sm" autocomplete="off" checked>
+              <label class="btn btn-secondary" for="sm">Sm</label>
+
+              <input type="radio" class="btn-check" name="sizeradio" id="md" autocomplete="off">
+              <label class="btn btn-secondary" for="md">Md</label>
+
+              <input type="radio" class="btn-check" name="sizeradio" id="lg" autocomplete="off">
+              <label class="btn btn-secondary" for="lg">Lg</label>
+              <input type="radio" class="btn-check" name="sizeradio" id="xl" autocomplete="off">
+              <label class="btn btn-secondary" for="xl">XL</label>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!--  -->
-    
-  </section>
-  
-  <!-- Product View -->
-  <section id="ProdView">
-    <div class="showcase">
-      
-      
-    </div>
-  </section>
-  
-  <!-- Preferences and add to cart -->
-  <section id="Preferences">
-    <div class="prefContainer">
-    <div class="sizeguide" >
-      <h2>Choose Size</h2>
-      <div id="size" >
-     
-      <div class="btn-group1" role="group1" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="sizeradio" id="sm" autocomplete="off" checked>
-        <label class="btn btn-secondary" for="sm">Sm</label>
-      
-        <input type="radio" class="btn-check" name="sizeradio" id="md" autocomplete="off">
-        <label class="btn btn-secondary" for="md">Md</label>
-      
-        <input type="radio" class="btn-check" name="sizeradio" id="lg" autocomplete="off">
-        <label class="btn btn-secondary" for="lg">Lg</label>
-        <input type="radio" class="btn-check" name="sizeradio" id="xl" autocomplete="off">
-        <label class="btn btn-secondary" for="xl">XL</label>
-      </div>
-    </div>
-    </div>
-    <div class="colorchoice">
-      <h2>Choose Color</h2>
-      <div   id="color">
-        
-        <div class="btn-group2" role="group2" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="colorradio" id="black" autocomplete="off"  onClick="colorChange()" value="blackjacket">
-          <label class="btn btn-secondary black" for="black"></label>
-        
-          <input type="radio" class="btn-check" name="colorradio" id="white" autocomplete="off" onClick="colorChange()" value="whitejacket">
-          <label class="btn btn-secondary white" for="white"></label>
-        
-          <input type="radio" class="btn-check" name="colorradio" id="grey" autocomplete="off" onClick="colorChange()" value="greyjacket">
-          <label class="btn btn-secondary grey" for="grey"></label>
-          <input type="radio" class="btn-check" name="colorradio" id="yellow" autocomplete="off" onClick="colorChange()" value="yellowjacket">
-          <label class="btn btn-secondary yellow" for="yellow"></label>
-        </div>
-        
-        
-    </div>
-    </div>
-    <div class="cartWrapper">
-      <div id="favorite">
-        <i type="button" class="btn fab fa-gratipay"></i>
-      </div>
+        <div class="colorchoice">
+          <h2>Choose Color</h2>
+          <div id="color">
 
-      <div id=add-to-cart>
-        <input type="submit" value="Add to Cart" title="add-to-cart-button" class="btn btn-secondary" >
-        <div class="cart-item">
+            <div class="btn-group2" role="group2" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="colorradio" id="black" autocomplete="off"
+                onClick="colorChange()" value="blackjacket">
+              <label class="btn btn-secondary black" for="black"></label>
+
+              <input type="radio" class="btn-check" name="colorradio" id="white" autocomplete="off"
+                onClick="colorChange()" value="whitejacket">
+              <label class="btn btn-secondary white" for="white"></label>
+
+              <input type="radio" class="btn-check" name="colorradio" id="grey" autocomplete="off"
+                onClick="colorChange()" value="greyjacket">
+              <label class="btn btn-secondary grey" for="grey"></label>
+              <input type="radio" class="btn-check" name="colorradio" id="yellow" autocomplete="off"
+                onClick="colorChange()" value="yellowjacket">
+              <label class="btn btn-secondary yellow" for="yellow"></label>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="cartWrapper">
+          <div id="favorite">
+            <i type="button" class="btn fab fa-gratipay"></i>
+          </div>
+
+          <div id=add-to-cart>
+            <input type="submit" value="Add to Cart" title="add-to-cart-button" class="btn btn-secondary">
+            <div class="cart-item">
+            </div>
+          </div>
+
+
         </div>
       </div>
 
-      
-    </div>  
-    </div>
+    </section>
 
-  </section>
-  
-  
 
-</div>
+
+  </div>
 
 
 </body>
+
 </html>
